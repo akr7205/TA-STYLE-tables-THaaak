@@ -1,0 +1,483 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height:1.7;
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+	
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,time{
+    font-family: 'Karla', sans-serif;
+}
+/* General */
+.container {
+    /* max-width: 1330px; */
+	/* max-width: 1280px; */
+	max-width: 1120px;
+    margin: 0 auto;
+    /* padding: 0 32px; */
+	width: 100%;
+}
+.simple-flex{
+	display: flex;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.center{
+	justify-content: center;
+	align-items: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+	justify-content: center;
+} 
+.flex-start
+{
+	align-items: flex-start;
+}
+.flex-inline{
+	display: flex;
+	align-items: center;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.align-self{
+	align-self: flex-start;
+}
+.flex-48{
+	flex: 0 1 48%;
+}
+.flex-24{
+	flex: 0 1 24%;
+}
+.padding
+{
+	padding: 50px 0;
+}
+.section-padding{
+	padding: 50px 0;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.btn{
+	display: inline-block;
+	border-radius: 7px;
+	color: #ffffff;
+	background-color: #ED563A;
+
+}
+.btn-primary
+{
+	padding: 5px 13px;
+}
+.btn-secondary{
+	padding: 10px 13px;
+}
+.btn-tertiary{
+
+}
+.submit{
+	width: 100%;
+    background: #69C6BA;
+    font-weight: 600;
+    margin-top: 50px;
+    border: 0;
+    border-radius: 5px;	
+}
+.flexible-img
+{
+width: 100%;
+}
+.strong{ 
+	color: #ED563A;
+}
+.strong-white
+{
+	color: #fff;
+}
+/* header  */
+.header{
+	padding: 15px 0;
+	position: absolute;
+    width: 100%;
+    top: 0;
+	background: rgb(216 211 211 / 20%);
+	z-index: 1;
+}
+.header-container{
+	max-width: 951px;
+    margin: 0 auto;
+}
+.brand{
+	font-size: 27px;
+    font-weight: 700;
+}
+.brand strong{
+	color: #ED563A;	
+}
+.nav-menu{
+
+}
+/* .nav-menu .strong{ 
+	color: #ED563A;
+} */
+.nav-menu li{
+	margin-left: 25px;	
+}
+/* hero  */
+.hero-section{
+/* height: 100vh; */
+position: relative;
+}
+.hero-container{
+
+}
+.video-wrapper{
+width: 100%;
+}
+.video-wrapper .cover-video{
+width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 850.25px;
+    background: linear-gradient(to right,rgb(43,53,62,0.5),rgb(43,53,62,0.5))
+}
+.hero-content{
+z-index: 1;
+position: absolute;
+    top: 33%;
+    right: 27%;
+	color: #fff;
+	text-align: center;
+}
+.hero-content p{
+	font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+.hero-content h1{
+	font-size: 60px;
+    word-spacing: 10px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.hero-content .gym{
+	color: #ED563A;
+}
+/* .hero-content a{
+	padding: 10px 13px;
+} */
+.about-section{
+padding: 70px 0;
+}
+.section-header{
+text-align: center;
+width: 50%;
+    margin: 0 auto;
+}
+/* section header  */
+.section-header h2{
+	font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+.section-header img{
+
+}
+.section-header p{
+	font-weight: 500;
+    margin-top: 5px;
+	color: #c2c0c0;
+}
+.gym-program-container{
+	margin-top: 85px;
+}
+.gym-program-col-1{
+flex: 0 1 49%;
+}
+.gym-program-col-2{
+	flex: 0 1 49%;
+}
+.gym-program-content{
+    margin-bottom: 27px;
+}
+.article-img{
+
+}
+.article-img img{
+	
+}
+.article-content{
+	margin-left: 25px;
+	align-self: stretch;
+}
+.article-content h3{
+	font-weight: 700;
+}
+.article-content p{
+	color: #c2c0c0;
+	font-size: 13px;
+	margin: 4px 0;
+}
+.article-content a{
+	color: #ED563A;
+	font-size: 13px;
+	font-weight: 600;
+}
+.strong-article strong{
+	color: blue;
+	font-weight: 600;
+
+}
+/* <!-- begin today  --> */
+.begin-today{
+background: url(../cta-bg.jpg);
+background-size: cover;
+}
+.begin{
+	text-align: center;
+    margin: 0 auto;
+	width: 50%;
+	padding: 35px 0;
+    color: #fff;
+}
+.content{
+
+}
+.content h2{
+	font-size: 40px;
+    font-weight: 700;
+}
+.content p{
+	margin: 17px 0;
+	font-size: 14px;
+	color: #DFDFDF;
+}
+.content a{
+	
+}
+/* <!-- CLASSES SECTION  --> */
+.classes-section{
+	padding: 5% 0;
+}
+.classes-container{
+
+}
+.classes{
+	margin-top: 50px;
+}
+.classes-col-1{
+flex: 0 1 30%;
+}
+.classes-col-2{
+flex: 0 1 65%;	
+}
+.class-schedule{
+	justify-content: flex-start;
+	padding: 20px;
+	box-shadow: 2px 2px 3px 3px rgb(182 180 180 / 50%), -1px -1px 1px -1px rgb(182 180 180 / 50%);
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+
+.class-schedule img{
+
+}
+.class-schedule h4{
+	font-size: 20px;
+    font-weight: 700;
+    padding-left: 14px;
+}
+.view-schedule{
+	padding: 20px;
+	background: #ED563A;
+	box-shadow: 2px 2px 3px 3px rgb(182 180 180 / 50%), -1px -1px 1px -1px rgb(182 180 180 / 50%);
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+}
+/* classes-col-2  */
+.class-article{
+
+}
+.class-article img{
+	border-radius: 5px;
+	width: 100%;
+}
+.class-article  h4{
+	font-size: 24px;
+    font-weight: 700;	
+}
+.class-article p{
+color: #c2c0c0;
+margin: 15px 0;	
+}
+.class-article a{
+	
+}
+/* <!-- fitness  SCHEDULE --> */
+.schedule-section{
+padding: 90px 0;
+background: url(../schedule-bg.jpg);
+background-size: cover;
+}
+.schedule{
+
+}
+.weekly-days{
+color: #fff;
+text-align: center;
+ margin-top: 45px;
+}
+.weekly-days span{
+	margin: 0 7px;	
+}
+/* <!-- training time table  --> */
+.schedule-table{
+
+}
+table{
+	width: 100%; 
+	color: #fff;
+	margin-top: 65px;
+}
+td,th{
+	border: 1px solid #fff;
+	padding: 25px;
+    text-align: center;
+}
+/* <!-- EXPERT TRAINER  --> */
+.trainer-section{
+	padding: 90px 0;
+
+}
+.trainer-details{
+margin-top: 45px;
+}
+.trainer-col{
+	flex: 0 1 31%;
+    padding: 20px;
+    border-radius: 5px;
+	box-shadow: 2px 2px 3px 3px rgb(182 180 180 / 50%), -1px -1px 1px -1px rgb(182 180 180 / 50%);
+}
+
+.trainer-col img{
+width: 100%;
+object-fit: cover;	
+}
+.trainer-col a{
+	margin: 7px 0;
+    display: inline-block;	
+}
+.trainer-col h3{
+	
+}
+.trainer-col p{
+	margin: 7px 0;
+}
+.social-media-icons{
+
+}
+.social-media-icons i{
+	margin-right: 5px;
+}
+/* contact-section */
+.contact-section iframe{
+flex: 0 1 50%;
+}
+.form{
+	flex: 0 1 50%;
+	background: url(../contact-bg.jpg);
+	padding: 50px;
+}
+.contact-form{
+	flex: 0 1 50%;
+	background: #fff;
+	padding: 23px;
+}
+.input-field{
+	width: 100%;
+    margin-bottom: 9px;
+    padding: 7px;
+	resize: none;
+}
+/* footer  */
+.footer{
+    text-align: center;
+    padding: 25px 0;
+}
+/* hover effect */
+.nav-menu li a:hover{
+	color: #ED563A;
+}
+.hedaer-nav .nav-menu .signup-btn{
+	color: #fff;
+}
